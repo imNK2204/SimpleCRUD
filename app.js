@@ -3,7 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 app.use(express.json());
-const port = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 const mongoose = require("mongoose");
 
 const recipeModel = require("./models/recipe");
