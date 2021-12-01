@@ -54,4 +54,4 @@ app.delete("/recipe/deleterecipe/:name", async (req, res) => {
     return res.json({ data: "Recipe deleted successfully" });
 });
 
-app.listen(port, () => console.log(`server running on port 5000`));
+app.listen(port, () => console.log(`server running on port ${port}`));
