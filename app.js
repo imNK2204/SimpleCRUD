@@ -12,7 +12,7 @@ mongoose
   .connect(process.env.MONGOURL)
   .then(() => console.log("mongo db connected"));
 
-app.get("/", (req, res) => res.send("Hello FullStack!"));
+app.get("/", (req, res) => res.send("Welcome to Recipe App! Improve your test.. "));
 
 app.get("/list", async (req, res) => {
     const recipeList = await recipeModel.find({});
